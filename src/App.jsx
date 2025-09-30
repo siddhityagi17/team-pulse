@@ -1,10 +1,13 @@
-import React from 'react'
 
-export default function App() {
+import React from 'react';
+import Dashboard from './pages/Dashboard';
+
+function App() {
   return (
-    <div>
-      <h1>Hello Team Pulse 🚀</h1>
-      <p>Step 1 is done!</p>
+    <div className="App">
+      <Dashboard />
     </div>
-  )
+  );
 }
+
+export default App;
