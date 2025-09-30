@@ -1,10 +1,24 @@
-import React from 'react';
+
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateStatus } from '../redux/slices/membersSlice';
 
 const StatusSelector = ({ member }) => {
     const dispatch = useDispatch();
     const statuses = ['Working', 'Break', 'Meeting', 'Offline'];
+
+    useEffect(() => {
+        let timer;
+        if (member.status !== 'Offline') {
+            timer = setTimeout(() => {
+                dispatch(updateStatus({ id: member.id, newStatus: 'Offline' }));
+            }, 600000);
+        }
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [member.status, member.id, dispatch]);
 
     const handleStatusChange = (newStatus) => {
         dispatch(updateStatus({ id: member.id, newStatus }));
