@@ -21,9 +21,9 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="bg-gray-100 min-h-screen">
-            <header className="flex justify-between items-center p-4 bg-white shadow-md">
-                <h1 className="text-2xl font-bold">Team Pulse Dashboard</h1>
+        <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+        <header className="bg-white dark:bg-gray-800 shadow-md flex justify-between items-center p-4">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Team Pulse Dashboard</h1>
                 <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
                         <span>Select User:</span>
