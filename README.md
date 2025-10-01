@@ -1,20 +1,42 @@
+# Team Pulse Dashboard
 
-HEAD
-# React + Vite
+A productivity monitoring tool for an internal team, built with a focus on role-based views using React and Redux Toolkit. This dashboard allows team leads to monitor member statuses and assign tasks, while team members can update their own status and manage their task progress.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 Features
 
-Currently, two official plugins are available:
+* **Role-Based Views:** A toggle allows users to switch between a **Team Lead** view and a **Team Member** view.
+* **Status Monitoring:** Team Leads can see the real-time status of all team members (Working, Break, Meeting, Offline).
+* **Task Management:**
+    * Leads can assign new tasks to team members.
+    * Members can update the progress of their assigned tasks using a progress bar.
+* **Data Visualization:** A pie chart visualizes the distribution of team member statuses.
+* **Dark Mode:** A toggle allows users to switch between light and dark themes.
+* **Auto-Reset:** A user's status is automatically reset to "Offline" after 10 minutes of inactivity.
+* **State Management:** All application state is managed globally using **Redux Toolkit**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 💻 Tech Stack
 
-## React Compiler
+* **React:** For building the user interface.
+* **Redux Toolkit:** For efficient and scalable state management.
+* **Tailwind CSS:** For fast and utility-first styling.
+* **Recharts:** For creating the data visualization chart.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ⚙️ Setup Instructions
 
-## Expanding the ESLint configuration
+To run this project locally, follow these steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# team-pulse
- 0d34495d90e3731d8e42346876e4e6e7a1ab05e5
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/siddhityagi17/team-pulse.git](https://github.com/siddhityagi17/team-pulse.git)
+    cd team-pulse
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:5173`.
